@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView1"
+        app:srcCompat='@drawable/image_facebook'
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+
+        />
+    <EditText
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:hint="@string/hint_email_phone"
+        android:background="@drawable/vien_goc_tron"
+        android:textSize="@dimen/text_size_large"
+        android:id="@+id/User" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vien_goc_tron"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:hint="@string/hint_pass"
+        android:layout_below="@id/User"
+        android:textSize="@dimen/text_size_large"
+        android:id="@+id/Password"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Password"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:background="@drawable/vien_goc_tron2"
+        android:textColor="@color/white"
+        android:id="@+id/Login"/>
+
+    <RelativeLayout
+        android:layout_below="@id/Login"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/edt_magin_left"
+        android:paddingRight="@dimen/edt_magin_right">
+
+        <Button
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/Signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edt_magin_bottom"
+            android:background="@color/blue"
+            android:layout_gravity="bottom"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:text="@string/text_sign_up"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+        <ImageButton
+            android:layout_marginBottom="@dimen/edt_magin_bottom"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/edt_magin_left"
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_help"
+            android:background="@color/blue"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
